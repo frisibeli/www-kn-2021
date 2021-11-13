@@ -1,6 +1,6 @@
 // [Step 1] Change the USERNAME const to your (user)name. This will be used as your chat handle.
 // Then refresh the page and copy the message in the console.
-const USERNAME = "kristiyan"; // Change it to your username
+const USERNAME = "Test user"; // Change it to your username
 
 let chatConversationElement;
 let sendButtonElement;

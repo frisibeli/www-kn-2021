@@ -1,6 +1,6 @@
 // [Step 1] Change the USERNAME const to your (user)name. This will be used as your chat handle.
 // Then refresh the page and copy the message in the console.
-const USERNAME = "Test User"; // Change it to your username
+const USERNAME = "kristiyan"; // Change it to your username
 const HOST = "http://167.71.56.154:81"
 
 let chatConversationElement;
@@ -41,7 +41,7 @@ function init() {
 	updateChat(true)
 
 	setInterval(() => {
-		updateChat()
+		// updateChat()
 	}, 2000)
 
 
@@ -112,7 +112,11 @@ function renderConversation(conversationJSON, scrollToBottom) {
 	for (const msg of conversationJSON.conversation) {
 		if (msg) {
 			let li = document.createElement("li")
-			li.innerHTML = `<strong>${msg.user}</strong>: ${msg.message}`
+			if (msg.user === USERNAME) {
+				li.innerHTML = `<strong class="me">${msg.user}</strong>: ${msg.message}`
+			} else {
+				li.innerHTML = `<strong>${msg.user}</strong>: ${msg.message}`
+			}
 			chatConversationElement.appendChild(li);
 		}
 	}

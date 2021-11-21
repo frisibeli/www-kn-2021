@@ -1,4 +1,13 @@
 {
+    "name": "kristiyan/www-kn-2-21",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Kristiyan Krumov",
+            "email": "kristiyan.boyanov@gmail.com"
+        }
+    ],
+    "require": {},
     "autoload": {
         "classmap": [
             "src/"

@@ -17,7 +17,10 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
-    - uses: MilesChou/composer-action/7.1/install@master
+    - uses: nanasess/setup-php@master
+      with:
+        php-version: '7.1'
+#     - uses: MilesChou/composer-action/7.1/install@master
 #     - name: Build Composer
 #       uses: php-actions/composer@v5
 #       with:

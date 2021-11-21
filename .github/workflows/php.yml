@@ -17,11 +17,11 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
-    
-    - name: Build Composer
-      uses: php-actions/composer@v5
-      with:
-        php_version: 7.1
+    - uses: MilesChou/composer-action/7.1/install@master
+#     - name: Build Composer
+#       uses: php-actions/composer@v5
+#       with:
+#         php_version: 7.1
 
     - name: Validate composer.json and composer.lock
       run: composer validate

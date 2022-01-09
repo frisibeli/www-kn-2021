@@ -1,0 +1,17 @@
+{
+    "name": "kristiyan/php-orm",
+    "require": {
+        "illuminate/database": "^8.76"
+    },
+    "autoload": {
+        "psr-4": {
+            "Kristiyan\\PhpOrm\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Kristiyan Boyanov",
+            "email": "kristiyan@uber.com"
+        }
+    ]
+}
